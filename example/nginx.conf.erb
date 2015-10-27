@@ -20,8 +20,8 @@ http {
 
 	log_format l2met 'measure#nginx.service=$request_time request_id=$http_x_request_id';
 
-	access_log logs/access.log l2met;
-  error_log logs/access.log;
+	access_log /app/logs/nginx/access.log l2met;
+  error_log /app/logs/nginx/error.log;
 
 
 	default_type application/octet-stream;
